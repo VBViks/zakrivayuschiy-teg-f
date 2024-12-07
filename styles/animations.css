@@ -52,6 +52,8 @@
   }
 
   .like-icon {
+    transform-origin: center center;
+    
     .core {
       fill: transparent;
       transition: fill 0.3s linear 0.03s;
@@ -67,7 +69,6 @@
     .core {
       fill: var(--fill-color);
       transition: fill 0.3s linear 0s;
-      /* animation-fill-mode: fill 0.3s linear 0.03s; */
     }
   
     .main-body {
@@ -96,10 +97,9 @@
   }
   
   .like-icon.is-liked .heart {
-    animation: ScaleIncrease 0.3s 0.1s ease-in;
-
+    animation: ScaleIncrease 0.3s 0.1s ease-in 1 alternate;
   }
   
   .like-icon.is-liked .sparks {
-    animation: OpacityIncrease 0.3s 0.3s ease-in;
+    animation: OpacityIncrease 0.3s 0.3s ease-in 1 alternate;
   }
